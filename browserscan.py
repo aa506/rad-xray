@@ -10,7 +10,7 @@ def main(data1):
 	output, error = rsp.communicate()
 	print(output)
 
-file1 = sys.argv[1]
+file1 = sys.argv[0]
 if __name__=='__main__':
 	file = open(file1)
 	for text in file.readlines():
