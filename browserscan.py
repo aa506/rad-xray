@@ -5,7 +5,7 @@ import sys
 
 def main(data1):
 	target = data1
-	cmd = ["/usr/bin/xray","webscan","--browser-crawler",target,"--html-output" ,"report__datetime__.html"]
+	cmd = ["/usr/local/bin/xray","webscan","--browser-crawler",target,"--html-output" ,"report__datetime__.html"]
 	rsp=subprocess.Popen(cmd)
 	output, error = rsp.communicate()
 	print(output)
